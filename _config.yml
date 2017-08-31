@@ -8,15 +8,12 @@ permalink:     ./post/:categories/:year-:month-:day-:title:output_ext
 
 rss_path : ./feed.xml
 
-source:  .
-include: ["_kiss"]
-exclude: ["node_modules", "scripts"]
 
 destination:      ./.site
 layouts_dir:      ./_layouts
 
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
-      
+
 defaults:
   - scope:
       path: "_posts" # an empty string here means all files in the project
@@ -24,4 +21,4 @@ defaults:
     values:
       layout: "posts"
       comments: false
-      category: "未归类"
+
